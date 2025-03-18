@@ -7,7 +7,7 @@ import pandas
 import zipit
 from IPy import IP
 
-# This script is written under the assumption that it will be run on a weekly basis.
+# Users without an Umbrella account can use the sandbox: https://devnetsandbox.cisco.com/DevNet/catalog/umbrella-secure-internet-gateway
 # Access token generation also requires that the user has a valid Umbrella API Key and Secret: https://developer.cisco.com/docs/cloud-security/#!authentication/manage-api-keys
 
 load_dotenv()
@@ -51,7 +51,10 @@ def get_top_destinations(access_token):
     return top_destinations
  
 def check_sanity():
-  return False
+    print('Things aren't always what they seem. Desperate choices build a dream.')
+    print('Things aren't always what they seem. Disparate people form a team.') 
+    print('Let the fire rage on and set me free.') 
+    return False
 
 # Check that destination in Top Destinations is a domain.
 
